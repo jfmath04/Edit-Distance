@@ -1,0 +1,61 @@
+COS126 Final Project: Status Update
+
+*Please complete the following questions and upload this file to TigerFile.*
+
+Do not alter the format of the questions, replace the ** Write here ** with your answers.
+
+  Basic Information
+
+Name 1: Jenny Fan
+NetID 1: jf8083
+
+Name 2 (include if pair project): Bryson Jandwa
+NetID 2 (include if pair project): bj7218
+
+Project advisor: Maya Gupta
+Project title: Edit Distance Visualization and Application
+
+
+  Required Questions
+
+A. Summarize your proposed three features (your features might have
+changed slightly after the proposal, so this is so your advisor knows
+the current status of your plans):
+
+Feature 1. 
+This feature is a Java implementation of the edit distance algorithm based on previous knowledge in linguistics of this algorithm. It has the basic distance definition based on number of edits, as well as a modified version to include different weights for different edits. The different types of distances will be incorporated as a decision the client can make.
+
+Feature 2. 
+This feature is a visualization of the distance from every word in a chosen document to a reference word given by the client. The first visual is a circle of plotted points connected by line segments where each point, in polar coordinates, has angle corresponding to the fraction of the document the word is at and radius equal to the distance from the word to the reference word. The second visual is a histogram of the number of words for each distance. We decided to do both because the first is visually appealing but not as useful for analyzing, while the second is visually less appealing but more useful for analyzing.
+
+Feature 3. 
+This feature is a near-match document search, where in a chosen document and a client-given reference word, the output is the set of all words in the document that have a distance less than a certain threshold to the reference word, either based on the original edit distance or by the keyboard distance we created (chosen by user), as well as the count of these matches.
+
+B. Summarize what you have implemented for each feature:
+
+Feature 1.
+The basic implementation is done, as well as the version with weight tables. We created our own weight table for substitution weights based on distance on the QWERTY keyboard, which is stored as a text file of 26 rows with 26 columns of weights that the program will read in if this distance metric is selected by the client.
+
+Feature 2.
+We have the basic output for the first visual but in hardcoded inputs and in black and white drawing. We also have the code for the count of each distance in the histogram but not the visual output of that yet.
+
+Feature 3.
+We have not formally begun this yet; however the code for the histogram above serves as a start to finding the near-matches.
+
+Other Code (optional, in case you have extra code).
+** Write here **
+
+
+C. Estimate what you have left to implement for each feature:
+
+Feature 1.
+We may decide to add another distance metric, which means we will need to create more text files with tables. Other than that, this feature is pretty much done.
+
+Feature 2.
+We need to turn the first visual into a user input and add some more color to the drawing to make it more visually appealing. We also need to do the visual component for the histogram.
+
+Feature 3.
+We have to do this entire feature, but the backbone for doing it is all there.
+
+Other Code (optional, in case you have extra code).
+** Write here **
